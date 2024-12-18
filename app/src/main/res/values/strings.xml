@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Numrah App</string>
+    <string name="signup_title">حياك بيننا</string>
+    <string name="name">اسمك</string>
+    <string name="gender">جنسك</string>
+    <string name="signup_info"><u>استمرارك يعني موافقتك على الشروط والأحكام</u></string>
+    <string name="continu">استمر</string>
+    <string name="signup_hint">يجب أن لا يقل عن ٣ أحرف</string>
+    <string name="find_a_friend">ابحث عن صديق</string>
+    <string name="loosen_with">فضفض مع:</string>
+    <string name="loosen">فضفض</string>
+    <string name="female">أنثى</string>
+    <string name="everyone">الكل</string>
+    <string name="male">ذكر</string>
+    <string name="Incidents">الحادثات</string>
+    <string name="account">حسابیی</string>
+    <string name="find_best_match">البحث عن أفضل تطابق لك</string>
+    <string name="massey">ماسي</string>
+    <string name="username_is_required">Username is required</string>
+    <string name="select_a_gender">Select a gender</string>
+
+
+</resources>

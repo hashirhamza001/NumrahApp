@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".views.SignupActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp"
+        android:text="@string/signup_title"
+        android:textColor="@color/sky_blue"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp"
+        android:text="@string/name"
+        android:textColor="@color/heading_color"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_border"
+        android:hint="@string/signup_hint"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp"
+        android:text="@string/gender"
+        android:textColor="@color/heading_color"
+        android:textSize="17sp" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_female"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person_female"/>
+
+        <ImageView
+            android:id="@+id/iv_male"
+            android:layout_marginStart="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_info"
+        android:textColor="@color/heading_color"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/continu"
+        android:textColor="@color/white"
+        android:background="@color/btn_color"
+        android:textSize="20sp" />
+
+</LinearLayout>

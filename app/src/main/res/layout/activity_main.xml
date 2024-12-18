@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".views.SignupActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp"
+        android:text="@string/find_a_friend"
+        android:textColor="@color/sky_blue"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp"
+        android:text="@string/loosen_with"
+        android:textColor="@color/heading_color"
+        android:textSize="17sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_female"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_person_female" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/female"
+                android:textColor="@color/heading_color"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_everyone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_everyone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/everyone"
+                android:textColor="@color/heading_color"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_male"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/heading_color"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+android:background="@color/white"
+       android:gravity="center"
+       android:paddingVertical="20dp" android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="0dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_chat" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Incidents"
+               android:textColor="@color/heading_color"
+               android:textSize="17sp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:background="@drawable/bg_circle"
+               android:backgroundTint="@color/red"
+               android:layout_height="wrap_content"
+               android:text="@string/loosen"
+               android:gravity="center"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:textSize="17sp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/ic_person_" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/account"
+               android:textColor="@color/heading_color"
+               android:textSize="17sp" />
+       </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>
