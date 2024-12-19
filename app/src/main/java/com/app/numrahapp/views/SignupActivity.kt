@@ -21,7 +21,7 @@ class SignupActivity : AppCompatActivity() {
             }else if (!isGenderSelected) {
                 Toast.makeText(this, getString(R.string.select_a_gender),Toast.LENGTH_SHORT).show()
             }else{
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, ChatActivity::class.java))
                 finish()
             }
 

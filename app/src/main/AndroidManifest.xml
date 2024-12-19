@@ -25,6 +25,7 @@
             android:name=".views.MainActivity"
             android:exported="false" />
         <activity android:name="com.app.numrahapp.views.SearchActivity" />
+        <activity android:name="com.app.numrahapp.views.ChatActivity" />
     </application>
 
 </manifest>

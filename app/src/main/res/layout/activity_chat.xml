@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white"
+    android:orientation="vertical"
+    tools:context=".views.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:drawableTop="@drawable/ic_refresh"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:drawableTop="@drawable/ic_info"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/info"
+            android:textColor="@color/gray_text"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_add"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textColor="@color/gray_text"
+            android:textSize="17sp" />
+
+      <View
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="علدالرحمن"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_person_circle"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:id="@+id/rv_chat"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_input">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="12dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColorHint="@color/gray_text"
+            android:textColor="@color/black"
+            android:hint="@string/type"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send"/>
+    </LinearLayout>
+</LinearLayout>

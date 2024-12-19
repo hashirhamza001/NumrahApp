@@ -18,6 +18,11 @@
     <string name="massey">ماسي</string>
     <string name="username_is_required">Username is required</string>
     <string name="select_a_gender">Select a gender</string>
+    <string name="skip">تجاوز</string>
+    <string name="accept">موافق</string>
+    <string name="info">ابلاغ</string>
+    <string name="add">اضافتہ</string>
+    <string name="type">هلا</string>
 
 
 </resources>
