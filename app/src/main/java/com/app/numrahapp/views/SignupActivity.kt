@@ -9,7 +9,7 @@ import com.app.numrahapp.R
 import com.app.numrahapp.databinding.ActivitySignupBinding
 
 class SignupActivity : AppCompatActivity() {
-    private var isGenderSelected: Boolean=false
+    private var isGenderSelected: Boolean = false
     lateinit var binding: ActivitySignupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,11 +17,13 @@ class SignupActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.tvContinue.setOnClickListener {
             if (binding.etUsername.text.isEmpty()) {
-                Toast.makeText(this, getString(R.string.username_is_required),Toast.LENGTH_SHORT).show()
-            }else if (!isGenderSelected) {
-                Toast.makeText(this, getString(R.string.select_a_gender),Toast.LENGTH_SHORT).show()
-            }else{
-                startActivity(Intent(this, ChatActivity::class.java))
+                Toast.makeText(this, getString(R.string.username_is_required), Toast.LENGTH_SHORT)
+                    .show()
+            } else if (!isGenderSelected) {
+                Toast.makeText(this, getString(R.string.select_a_gender), Toast.LENGTH_SHORT).show()
+            } else {
+                Utils(this).setUserName(binding.etUsername.text.toString())
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
 
@@ -38,6 +40,6 @@ class SignupActivity : AppCompatActivity() {
         binding.ivMale.background = null
         binding.ivFemale.background = null
         it.setBackgroundResource(R.drawable.bg_circle)
-        isGenderSelected=true
+        isGenderSelected = true
     }
 }
